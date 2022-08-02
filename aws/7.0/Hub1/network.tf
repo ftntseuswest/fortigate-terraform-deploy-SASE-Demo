@@ -61,7 +61,7 @@ resource "aws_route_table_association" "public2associate" {
 }
 
 resource "aws_route_table_association" "internalassociate" {
-  subnet_id      = aws_subnet.privatesubnetaz1.id
+  subnet_id      = aws_subnet.privatesubnetaz1lan1.id
   route_table_id = aws_route_table.fgtvmprivatert.id
 }
 
