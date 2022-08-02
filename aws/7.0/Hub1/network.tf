@@ -1,15 +1,8 @@
-// Creating Internet Gateways
-resource "aws_internet_gateway" "fgtvmigw1" {
+// Creating Internet Gateway
+resource "aws_internet_gateway" "fgtvmigw" {
   vpc_id = aws_vpc.fgtvm-vpc.id
   tags = {
-    Name = "fgtvm-igw1"
-  }
-}
-
-resource "aws_internet_gateway" "fgtvmigw2" {
-  vpc_id = aws_vpc.fgtvm-vpc.id
-  tags = {
-    Name = "fgtvm-igw2"
+    Name = "fgtvm-igw"
   }
 }
 
@@ -33,13 +26,7 @@ resource "aws_route_table" "fgtvmprivatert" {
 resource "aws_route" "externalroute1" {
   route_table_id         = aws_route_table.fgtvmpublicrt.id
   destination_cidr_block = "0.0.0.0/0"
-  gateway_id             = aws_internet_gateway.fgtvmigw1.id
-}
-
-resource "aws_route" "externalroute2" {
-  route_table_id         = aws_route_table.fgtvmpublicrt.id
-  destination_cidr_block = "0.0.0.0/0"
-  gateway_id             = aws_internet_gateway.fgtvmigw2.id
+  gateway_id             = aws_internet_gateway.fgtvmigw.id
 }
 
 resource "aws_route" "internalroute" {
