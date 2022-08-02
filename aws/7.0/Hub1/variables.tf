@@ -98,7 +98,7 @@ variable "size" {
 
 //  Existing SSH Key on the AWS 
 variable "keyname" {
-  default = "Fortinet-SASE"
+  default = "sase-us-west-1"
 }
 
 variable "adminsport" {

@@ -1,4 +1,4 @@
-// Creating Internet Gateway
+// Creating 2 Internet Gateway
 resource "aws_internet_gateway" "fgtvmigw" {
   vpc_id = aws_vpc.fgtvm-vpc.id
   tags = {
