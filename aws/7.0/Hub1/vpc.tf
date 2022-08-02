@@ -28,7 +28,7 @@ resource "aws_subnet" "publicsubnetaz1wan2" {
   }
 }
 
-resource "aws_subnet" "privatesubnetaz1" {
+resource "aws_subnet" "privatesubnetaz1lan1" {
   vpc_id            = aws_vpc.fgtvm-vpc.id
   cidr_block        = var.privatecidraz1
   availability_zone = var.az1

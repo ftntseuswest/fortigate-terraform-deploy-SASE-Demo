@@ -89,12 +89,12 @@ variable "fgtvmbyolami" {
 }
 
 variable "size" {
-  default = "c5n.xlarge"
+  default = "c5n.large"
 }
 
 //  Existing SSH Key on the AWS 
 variable "keyname" {
-  default = "<AWS SSH KEY>"
+  default = "Fortinet-SASE"
 }
 
 variable "adminsport" {
@@ -104,7 +104,7 @@ variable "adminsport" {
 variable "bootstrap-fgtvm" {
   // Change to your own path
   type    = string
-  default = "fgtvm.conf"
+  default = "fgtvm-hub1.conf"
 }
 
 
@@ -112,5 +112,5 @@ variable "bootstrap-fgtvm" {
 variable "license" {
   // Change to your own byol license file, license.lic
   type    = string
-  default = "license.lic"
+  default = "FGVM02TM22019407.lic"
 }
