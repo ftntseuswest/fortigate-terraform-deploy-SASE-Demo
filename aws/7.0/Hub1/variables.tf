@@ -98,7 +98,7 @@ variable "size" {
 
 //  Existing SSH Key on the AWS 
 variable "keyname" {
-  default = "<AWS SSH KEY>"
+  default = "Fortinet-SASE"
 }
 
 variable "adminsport" {
@@ -108,7 +108,7 @@ variable "adminsport" {
 variable "bootstrap-fgtvm" {
   // Change to your own path
   type    = string
-  default = "fgtvm.conf"
+  default = "fgtvm-hub1.conf"
 }
 
 
