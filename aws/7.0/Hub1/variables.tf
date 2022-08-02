@@ -93,7 +93,7 @@ variable "fgtvmbyolami" {
 }
 
 variable "size" {
-  default = "c5n.xlarge"
+  default = "c5n.large"
 }
 
 //  Existing SSH Key on the AWS 
