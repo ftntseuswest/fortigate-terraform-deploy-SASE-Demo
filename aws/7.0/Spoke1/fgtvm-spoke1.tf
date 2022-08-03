@@ -69,7 +69,7 @@ resource "aws_instance" "fgtvm-spoke1" {
   }
 
   tags = {
-    Name = -"FortiGateVM"
+    Name = "Spoke1-FGTVM"
   }
 }
 
