@@ -35,7 +35,7 @@ resource "aws_network_interface_sg_attachment" "internalattachment" {
   network_interface_id = aws_network_interface.eth2.id
 }
 
-resource "aws_instance" "fgtvm-hub1" {
+resource "aws_instance" "fgtvm-hub2" {
   ami               = var.license_type == "byol" ? var.fgtvmbyolami[var.region] : var.fgtvmami[var.region]
   instance_type     = var.size
   availability_zone = var.az1
