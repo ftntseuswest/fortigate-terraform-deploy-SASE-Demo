@@ -69,7 +69,7 @@ resource "aws_instance" "fgtvm-spoke1" {
   }
 
   tags = {
-    Name = -"Spoke1-FGTVM"
+    Name = -"Spoke1FGTVM"
   }
 }
 
