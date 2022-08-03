@@ -69,7 +69,7 @@ resource "aws_instance" "fgtvm-hub1" {
   }
 
   tags = {
-    Name = "FortiGateVM"
+    Name = "Hub1-FGTVM"
   }
 }
 
