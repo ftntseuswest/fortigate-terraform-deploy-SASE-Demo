@@ -10,6 +10,6 @@ output "Username" {
 }
 
 output "Password" {
-  value = aws_instance.fgtvm-hub1.id
+  value = aws_instance.fgtvm-hub2.id
 }
 
