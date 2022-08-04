@@ -53,7 +53,7 @@ resource "aws_route_table_association" "internalassociate" {
 }
 
 resource "aws_eip" "FGTPublicIP1" {
-  depends_on        = [aws_instance.fgtvm-spoke2]
+  depends_on        = [aws_instance.fgtvm-spoke222]
   vpc               = true
   network_interface = aws_network_interface.eth0.id
 }
